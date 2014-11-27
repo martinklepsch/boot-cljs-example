@@ -1,3 +1,20 @@
+**This is mostly identical to master except that it adds a basic sketch for testing Clojurescript.**
+
+You can compile and run clojurescript.test tests like this:
+```
+boot cljs-testable cljs-test
+```
+If you want to run tests after each compilation you can use [boot's][boot] generic watch task:
+```
+boot watch cljs-testable cljs-test
+```
+
+There are still some things to be worked out:
+
+* only add test source dir in `cljs-testable` (waiting for RC1)
+* package the test task up nicely so it can be pulled in as regular dependency
+
+
 # boot-cljs-example [![Build Status][badge]][build]
 
 Example project using [the boot build tool][boot] with the [boot-cljs],
